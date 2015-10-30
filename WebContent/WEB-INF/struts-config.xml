@@ -5,19 +5,17 @@
           "http://struts.apache.org/dtds/struts-config_1_3.dtd">
 
 <struts-config>
-
-    <form-beans>
-    	<form-bean name="helloWorldForm" type="com.vaannila.form.HelloWorldForm"/>
+<form-beans>
+    	<form-bean name="linkTestForm" type="com.vaannila.form.LinkTestForm"/>
     </form-beans>
 
 	<global-forwards>
-        <forward name="helloWorld" path="/helloWorld.do"/>
+        <forward name="linkTest" path="/linkTest.do"/>
     </global-forwards>
 
     <action-mappings>
-        <action path="/helloWorld" type="com.vaannila.action.HelloWorldAction" name="helloWorldForm">
-        	<forward name="success" path="/helloWorld.jsp" />
+        <action path="/linkTest" type="com.vaannila.action.LinkTestAction" name="linkTestForm">
+        	<forward name="success" path="/linkTest.jsp" />
         </action>
     </action-mappings>
-
 </struts-config>

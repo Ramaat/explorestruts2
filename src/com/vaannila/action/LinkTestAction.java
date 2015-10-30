@@ -8,14 +8,14 @@ import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 
-import com.vaannila.form.HelloWorldForm;
+import com.vaannila.form.LinkTestForm;
 
-public class HelloWorldAction extends Action {
+public class LinkTestAction extends Action {
 
 @Override
 public ActionForward execute(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response) throws Exception {
-    HelloWorldForm hwForm = (HelloWorldForm) form;
-    hwForm.setMessage("Hello World");
+    LinkTestForm hwForm = (LinkTestForm) form;
+    hwForm.setMessage("Successfully opened link test link.");
     return mapping.findForward("success");
     }
 }
