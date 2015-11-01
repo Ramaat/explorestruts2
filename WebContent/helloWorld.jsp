@@ -6,6 +6,8 @@
 </head>
 <body>
 <bean:write name="helloWorldForm" property="message"/>
+<p>Just wanted to make a change for test1</p>
+
 <p>Just wanted to make a change for test3</p>
 </body>
 </html>
